@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript Handon-3</h3>
+    <h4>Q1.Find the number of digits</h4>
+     
+    <pre>
+        const Find_Digits = (N) => 
+{
+	let count=0;
+	while(N!=0){
+	  N=parseInt(N/10);
+	  count=count+1;
+	}
+	return count;
+	
+};
+
+
+    
+
+
+    </pre>
+    <h4>Q2.Find the Fives.</h4>
+        <pre>
+            const Find_Five = (N) => 
+{
+	 let count=0;
+	 while(N!=0){
+	   r=N%10
+	   if (r==5){
+	     count=count+1;
+	   }
+	   N=parseInt(N/10);
+	 }
+	 return count;
+};
+
+</pre>
+
+    <h4>Q3.Find Sum</h4>
+    <pre>
+        const findSum = (n) => {
+  
+            let sum=0;
+            for (let i =1;i < = n;i++){
+              if (i%2==0){
+                sum=sum+i;
+              }
+              
+            }
+            return sum;
+              
+          };  
+          
+          
+    </pre>
+    
+    
+    
+    <h4>Q4.Find the sum of the digits of a given number.</h4>
+    <pre>
+        const Number_Sum = (N) => 
+{
+  let sum=0;
+	while(N!=0){
+	  r=(N%10);
+	  sum=sum+r;
+	  N=parseInt(N/10);
+	}
+	return sum;
+};
+
+</pre>
+    
+    
+    
+      <h4>Q5.Print the Odds.</h4>
+      <pre>
+        const Print_Odd = (N) => 
+        {
+             for(let i=2;i < =N;i++){
+               if (i==2){
+               console.log(i)
+               }
+               else if (i%2!=0){
+                 console.log(i);
+                 
+               }
+             }
+        };
+      </pre>
+    
+      <h4>Q6.Print the Pattern.</h4>
+      <pre>
+        const Print_pattern = (N) => 
+        {
+         for(let i=1;i<=N;i++)
+         {
+           let st=" "
+           
+           for(let j=1;j<=i;j++)
+           {
+            st=st+"*"
+           }
+           console.log(st)
+         }
+          
+        };
+          
+      </pre>
+    
+      <h4>Q7.Check whether a Number is a prime or not.</h4>
+      <pre>
+        const Prime_Check = (n) => 
+{
+	 
+	
+  let i;
+  let flag = 0;
+ 
+
+  if (n == 0 || n == 1){
+    flag = 1;}
+  r=parseInt(n/2);
+    
+
+  for (i = 2; i <= r; i++) {
+
+
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  if (flag == 0){
+    return "YES";}
+  else{
+    return "NO" ;}
+
+  
+
+};
+
+</pre>
+
+<h4>Q8. Print Numbers</h4>
+
+<pre>
+    const printNumbers = (n) => {
+        // let  st=" "
+        for(let i=1;i<=n;i++){
+          
+          // st=st+i;
+          console.log(i);
+        }
+        
+    };
+    
+     
+    
+    
+</pre>
+    
+
+
+
+<h4>Q9.Print the Table</h4>
+<pre>
+    const Print_Table = (N) => 
+    {
+      let sum=0;
+        for(let i=1;i<=10;i++){
+          sum=N*i;
+          console.log(N+ " *  " + i + " = " + sum);
+        }
+    }; 
+    
+</pre>
+
+    
+</body>
+</html>
